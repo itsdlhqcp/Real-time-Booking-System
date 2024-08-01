@@ -1,0 +1,59 @@
+.navbar{
+  height: 50px;
+  background-color: #003580;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1024px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 500;
+  border: solid 2px green;
+  pointer-events: none; 
+  cursor: default; 
+  margin: 14px 0px 1px 12px;
+  padding: 2px 5px; 
+  transition: background-color 0.3s; 
+}
+
+.logo:hover {
+  background-color: lightgreen; 
+}
+
+.navButton{
+  margin-left: 20px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: #003580;
+}
+
+.usernameContainer {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  border: 2px solid white;
+  padding: 3px 6px;
+  margin: 14px;
+  border-radius: 2px;
+}
+
+.logo-img {
+  width: 16px;
+  height: 16px;
+  margin: 0px 7px 0px 0px;
+}
+
+
+
+

@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  max-width: 1024px;
+  font-size: 12px;
+  padding: 20px;
+  
+}
+
+.fLists {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  flex-wrap: wrap; /* Allow the items to wrap on smaller screens */
+}
+
+.fList {
+  list-style: none;
+  padding: 0;
+  flex: 1; /* Ensure the lists are responsive */
+  min-width: 150px; /* Minimum width for each list item */
+}
+
+.fListItem {
+  margin-bottom: 10px;
+  color: #003580;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .fLists {
+    justify-content: flex-start;
+  }
+
+  .fList {
+    flex: 1 1 45%; /* Show two lists per row on smaller screens */
+    margin-bottom: 20px; /* Add some space between rows */
+  }
+
+  .fList:nth-child(4), .fList:nth-child(5) {
+    display: none; /* Hide the last two lists on smaller screens */
+  }
+
+  .fText {
+    text-align: center; /* Center the copyright text on smaller screens */
+    margin-top: 20px;
+  }
+  .footer{
+    margin: 0px 0px 15px 15px;
+  }
+}
